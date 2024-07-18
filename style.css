@@ -5,6 +5,7 @@
     --orange: rgb(230, 83, 60);
 }
 
+/* shared styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ body {
     background: black;
 }
 
-.paragraph {
+.description {
     color: rgba(255, 255, 255, 0.5);
     /* font-size: 14px; */
     font-size: 0.88rem;
@@ -28,16 +29,33 @@ body {
     text-align: center;
 }
 
+.heading {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+main section {
+    /* margin-bottom: 6.25rem; */
+}
+
+.nav-bar,
+.banner,
+.change-habits {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5.8rem;
+
+}
+
 /* navbar styles */
 
 header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-}
-
-.nav-bar,
-.banner {
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 1440px;
+    margin-bottom: 6.25rem;
 }
 
 .nav-bar {
@@ -103,7 +121,6 @@ header {
     /* white-space: pre-wrap; */
     position: relative;
     margin-bottom: 1.75rem;
-    margin-top: 1.5rem;
 }
 
 .miama {
@@ -111,6 +128,8 @@ header {
     font-size: 8rem;
     font-weight: normal;
     position: absolute;
+    /* bottom: 80px; */
+    bottom: 30%;
 }
 
 .banner-description {
@@ -216,16 +235,74 @@ header {
     margin-bottom: 5px;
 }
 
+/* change-your-habits styles */
+
+.change-habits-text {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 3.63rem;
+}
+
+.change-habits-image-text h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.change-habits-image-text p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.change-habits-image img {
+    border-radius: 50%;
+    border: 2px solid #242222;
+    margin-bottom: 1.875rem;
+}
+
+.change-habits-image {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.change-habits-image-1,
+.change-habits-image-2,
+.change-habits-image-3,
+.change-habits-image-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
+
+    /* common */
+    .heading {
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 120%;
+    }
+
+    /* header */
     .nav-links {
         display: none;
     }
 
+    .nav-bar {
+        margin-bottom: 50px;
+    }
+
     .hamburger-logo {
         display: block;
-        font-size: 30px;
+        font-size: 1.6rem;
     }
 
     .banner {
@@ -287,4 +364,20 @@ header {
     .banner-card-2 .five-hundred {
         font-size: 1.8rem;
     }
+
+    /* change your habit section */
+
+    .change-habits-text {
+        width: 90%;
+    }
+
+    .change-habits-image {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .change-habits-image-text{
+        width: 55%;
+    }
+
+
 }
