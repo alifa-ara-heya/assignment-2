@@ -79,6 +79,10 @@ header {
     padding: 12px 24px;
 }
 
+.hamburger-logo {
+    display: none;
+}
+
 /* banner styles */
 
 .banner {
@@ -139,6 +143,9 @@ header {
     font-weight: 600;
 }
 
+.mobile-banner-button {
+    display: none;
+}
 
 .orange-circle {
     width: 40px;
@@ -207,4 +214,77 @@ header {
     line-height: 40px;
     letter-spacing: 1px;
     margin-bottom: 5px;
+}
+
+
+/* responsive for mobile */
+@media screen and (max-width: 576px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-logo {
+        display: block;
+        font-size: 30px;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        max-width: 352px;
+    }
+
+    .banner-heading {
+        font-size: 2.4rem;
+    }
+
+    .miama {
+        font-size: 4rem;
+    }
+
+    .banner-description {
+        /* width: 80%; */
+    }
+
+    .orange-banner-button {
+        display: none;
+    }
+
+    .banner-button {
+        display: flex;
+        gap: 14px;
+    }
+
+    .mobile-banner-button {
+        display: block;
+        background-color: var(--orange);
+        border-radius: 42px;
+        padding: 1rem 2.5rem;
+        font-size: 18px;
+    }
+
+    .white-banner-button {
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 42px;
+        padding: 1rem 2.5rem;
+    }
+
+    .banner-card-1 {
+        left: 2rem;
+        bottom: 16rem;
+    }
+
+    .banner-card-2 {
+        right: -30px;
+        bottom: 28rem;
+        padding: 1rem;
+        width: 190px;
+    }
+
+    .banner-card-2 .five-hundred {
+        font-size: 1.8rem;
+    }
 }
