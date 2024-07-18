@@ -44,7 +44,8 @@ main section {
 .nav-bar,
 .banner,
 .change-habits,
-.extra-mile {
+.extra-mile,
+.calculator-container {
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 5.8rem;
@@ -248,7 +249,8 @@ header {
 
 /* change-your-habits styles */
 
-.change-habits-text {
+.change-habits-text,
+.bmi-calculator-text {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 3.63rem;
@@ -294,16 +296,16 @@ header {
 
 /* extra mile styles */
 
-.extra-mile{
+.extra-mile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10%;
     border-radius: 18px;
-background: rgb(34, 34, 34);
+    background: rgb(34, 34, 34);
 }
 
-.extra-mile-text{
+.extra-mile-text {
     width: 40%;
     padding: 2rem 3rem;
 }
@@ -312,18 +314,103 @@ background: rgb(34, 34, 34);
     text-align: left;
 }
 
-.extra-mile-text .description{
+.extra-mile-text .description {
     text-align: left;
 }
 
-.extra-mile-image{
+.extra-mile-image {
     width: 50%;
     padding: 2rem;
 }
 
-.extra-mile-image img{
+.extra-mile-image img {
     width: 100%;
     border-radius: 1.1rem;
+}
+
+/* bmi calculator styles */
+.calculator-background {
+    background: rgb(34, 34, 34);
+    padding: 60px 50px 10px 50px;
+}
+
+.calculator-container {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 30% 50%;
+    gap: 20%;
+    /* place-items: center; */
+}
+
+.calculator-chart {
+    /* width: 30%; */
+}
+
+.calculator-form-container {
+    /* width: 50%; */
+}
+
+.bmi-calculator-text .heading {
+    text-align: left;
+}
+
+.bmi-calculator-text .description,
+.calculator-form-container .description {
+    text-align: left;
+}
+
+.calculator-form-container .description {
+    margin-bottom: 2rem;
+}
+
+.calculator-chart h4,
+.calculator-form-container h4 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 3.25rem;
+}
+
+.calculator-form-container h4 {
+    margin-bottom: 14px;
+}
+
+.bmi-table,
+.bmi-table th,
+.bmi-table td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 13px 18px;
+    text-align: left;
+}
+
+.bmi-table td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.calculator-form input,
+.calculator-form select {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.calculator-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.full-width {
+    grid-column: span 2;
 }
 
 
@@ -351,7 +438,8 @@ background: rgb(34, 34, 34);
         font-size: 1.6rem;
     }
 
-    .banner, .extra-mile {
+    .banner,
+    .extra-mile {
         flex-direction: column;
     }
 
@@ -427,16 +515,16 @@ background: rgb(34, 34, 34);
     }
 
     /* extra miles */
-    .extra-mile-text{
+    .extra-mile-text {
         width: 80%;
         padding: 2rem 1.2rem;
     }
 
-    .btn-primary{
+    .btn-primary {
         width: 100%;
     }
 
-    .extra-mile-image{
+    .extra-mile-image {
         width: 90%;
     }
 }
