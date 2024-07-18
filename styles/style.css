@@ -335,21 +335,23 @@ header {
 }
 
 .calculator-container {
-    /* display: flex;
+    display: flex;
     justify-content: space-around;
-    align-items: center; */
-    display: grid;
+    /* align-items: center; */
+    /* display: grid;
     grid-template-columns: 30% 50%;
     gap: 20%;
-    /* place-items: center; */
+    place-content: center; */
 }
 
 .calculator-chart {
-    /* width: 30%; */
+    width: 30%;
+    /* flex dile ekhane width fixed lagbe, grid dile width lagbe na */
 }
 
 .calculator-form-container {
-    /* width: 50%; */
+    width: 50%;
+    /* flex dile ekhane width lagbe,  grid dile width lagbe na */
 }
 
 .bmi-calculator-text .heading {
@@ -357,23 +359,23 @@ header {
 }
 
 .bmi-calculator-text .description,
-.calculator-form-container .description {
+.calculator-form-text .description {
     text-align: left;
 }
 
-.calculator-form-container .description {
+.calculator-form-text .description {
     margin-bottom: 2rem;
 }
 
 .calculator-chart h4,
-.calculator-form-container h4 {
+.calculator-form-text h4 {
     font-size: 1.75rem;
     font-weight: 900;
     line-height: 120%;
     margin-bottom: 3.25rem;
 }
 
-.calculator-form-container h4 {
+.calculator-form-text h4 {
     margin-bottom: 14px;
 }
 
@@ -413,118 +415,8 @@ header {
     grid-column: span 2;
 }
 
-
-/* responsive for mobile */
-@media screen and (max-width: 576px) {
-
-    /* common */
-    .heading {
-        font-size: 2rem;
-        font-weight: 900;
-        line-height: 120%;
-    }
-
-    /* header */
-    .nav-links {
-        display: none;
-    }
-
-    .nav-bar {
-        margin-bottom: 50px;
-    }
-
-    .hamburger-logo {
-        display: block;
-        font-size: 1.6rem;
-    }
-
-    .banner,
-    .extra-mile {
-        flex-direction: column;
-    }
-
-    .banner-content {
-        max-width: 352px;
-    }
-
-    .banner-heading {
-        font-size: 2.4rem;
-    }
-
-    .miama {
-        font-size: 4rem;
-    }
-
-    .banner-description {
-        /* width: 80%; */
-    }
-
-    .orange-banner-button {
-        display: none;
-    }
-
-    .banner-button {
-        display: flex;
-        gap: 14px;
-    }
-
-    .mobile-banner-button {
-        display: block;
-        background-color: var(--orange);
-        border-radius: 42px;
-        padding: 1rem 2.5rem;
-        font-size: 18px;
-    }
-
-    .white-banner-button {
-        font-size: 12px;
-        font-weight: 600;
-        border-radius: 42px;
-        padding: 1rem 2.5rem;
-    }
-
-    .banner-card-1 {
-        left: 2rem;
-        bottom: 16rem;
-    }
-
-    .banner-card-2 {
-        right: -30px;
-        bottom: 28rem;
-        padding: 1rem;
-        width: 190px;
-    }
-
-    .banner-card-2 .five-hundred {
-        font-size: 1.8rem;
-    }
-
-    /* change your habit section */
-
-    .change-habits-text {
-        width: 90%;
-    }
-
-    .change-habits-image {
-        flex-direction: column;
-        gap: 2.5rem;
-    }
-
-    .change-habits-image-text {
-        width: 55%;
-    }
-
-    /* extra miles */
-    .extra-mile-text {
-        width: 80%;
-        padding: 2rem 1.2rem;
-    }
-
-    .btn-primary {
-        width: 100%;
-    }
-
-    .extra-mile-image {
-        width: 90%;
-    }
+.calculator-form-text{
+    width: 100%;
 }
+
+
