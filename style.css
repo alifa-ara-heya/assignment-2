@@ -43,11 +43,22 @@ main section {
 
 .nav-bar,
 .banner,
-.change-habits {
+.change-habits,
+.extra-mile {
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 5.8rem;
 
+}
+
+.btn-primary {
+    border-radius: 42px;
+    padding: 1rem 2.5rem;
+    background: var(--orange);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    border: none;
 }
 
 /* navbar styles */
@@ -281,6 +292,41 @@ header {
     align-items: center;
 }
 
+/* extra mile styles */
+
+.extra-mile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    border-radius: 18px;
+background: rgb(34, 34, 34);
+}
+
+.extra-mile-text{
+    width: 40%;
+    padding: 2rem 3rem;
+}
+
+.extra-mile-text .heading {
+    text-align: left;
+}
+
+.extra-mile-text .description{
+    text-align: left;
+}
+
+.extra-mile-image{
+    width: 50%;
+    padding: 2rem;
+}
+
+.extra-mile-image img{
+    width: 100%;
+    border-radius: 1.1rem;
+}
+
+
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
 
@@ -305,7 +351,7 @@ header {
         font-size: 1.6rem;
     }
 
-    .banner {
+    .banner, .extra-mile {
         flex-direction: column;
     }
 
@@ -375,9 +421,22 @@ header {
         flex-direction: column;
         gap: 2.5rem;
     }
-    .change-habits-image-text{
+
+    .change-habits-image-text {
         width: 55%;
     }
 
+    /* extra miles */
+    .extra-mile-text{
+        width: 80%;
+        padding: 2rem 1.2rem;
+    }
 
+    .btn-primary{
+        width: 100%;
+    }
+
+    .extra-mile-image{
+        width: 90%;
+    }
 }
