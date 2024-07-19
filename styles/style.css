@@ -45,11 +45,18 @@ main section {
 .banner,
 .change-habits,
 .extra-mile,
+.meat-team-image-container,
 .calculator-container {
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 5.8rem;
+}
 
+.change-habits-text,
+.bmi-calculator-text, .meet-team-text {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 3.63rem;
 }
 
 .btn-primary {
@@ -249,12 +256,6 @@ header {
 
 /* change-your-habits styles */
 
-.change-habits-text,
-.bmi-calculator-text {
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 3.63rem;
-}
 
 .change-habits-image-text h5 {
     font-size: 1.125rem;
@@ -332,6 +333,7 @@ header {
 .calculator-background {
     background: rgb(34, 34, 34);
     padding: 60px 50px 10px 50px;
+    margin-bottom: 5.5rem;
 }
 
 .calculator-container {
@@ -415,8 +417,49 @@ header {
     grid-column: span 2;
 }
 
-.calculator-form-text{
+.calculator-form-text {
     width: 100%;
 }
 
 
+/* meat team styles */
+.meet-team-image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    margin-top: 3.6rem;
+}
+
+.trainer{
+    position: relative;
+    padding-top: 100%;
+}
+
+.meet-team-image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    border-radius: 18px;
+    filter: brightness(75%);
+}
+
+.trainer-info{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.trainer-name{
+    font-size: 1rem;
+}
+
+.trainer-profession{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: .9rem;
+}

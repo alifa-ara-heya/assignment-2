@@ -8,6 +8,11 @@
         line-height: 120%;
     }
 
+    .change-habits-text, .bmi-calculator-text, .calculator-form-text, .meet-team-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     /* header */
     .nav-links {
         display: none;
@@ -85,11 +90,7 @@
 
     /* change your habit section */
 
-    .change-habits-text, .bmi-calculator-text, .calculator-form-text {
-        width: 90%;
-        margin: 0 auto;
-        
-    }
+    
 
     .change-habits-image {
         flex-direction: column;
@@ -128,27 +129,16 @@
 
     .calculator-chart {
         width: 90%;
-        /* flex dile ekhane width fixed lagbe, grid dile width lagbe na */
-    }
-
-    .calculator-form-container {
-        /* width: 90%; */
-        /* flex dile ekhane width lagbe,  grid dile width lagbe na */
     }
 
     .calculator-form-text{
         width: 200%;
     }
-
-
-    
-
-    
-
-    .calculator-form{
-        /* width: 100%; */
+   
+    .bmi-calculator-text{
+        margin-bottom: 2rem;
     }
-
+    
     .calculator-form {
         display: grid;
         grid-template-columns: repeat(2, 100%);
@@ -157,5 +147,16 @@
     
     .full-width {
         grid-column: span 2;
+    }
+
+    .meet-team-image-container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .meet-team-text{
+        margin-bottom: 2rem;
     }
 }
