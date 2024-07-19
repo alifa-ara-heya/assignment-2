@@ -37,23 +37,21 @@ body {
     margin-bottom: 14px;
 }
 
-main section {
-    /* margin-bottom: 6.25rem; */
-}
-
 .nav-bar,
 .banner,
 .change-habits,
 .extra-mile,
 .meat-team-image-container,
-.calculator-container {
+.calculator-container,
+.personalized-solution {
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 5.8rem;
 }
 
 .change-habits-text,
-.bmi-calculator-text, .meet-team-text {
+.bmi-calculator-text,
+.meet-team-text {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 3.63rem;
@@ -423,6 +421,9 @@ header {
 
 
 /* meat team styles */
+.meet-team{
+    margin-bottom: 3rem;
+}
 .meet-team-image-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -431,9 +432,11 @@ header {
     background: rgba(255, 255, 255, 0.1);
     padding: 1rem;
     margin-top: 3.6rem;
+    margin-bottom: 4rem;
+
 }
 
-.trainer{
+.trainer {
     position: relative;
     padding-top: 100%;
 }
@@ -449,17 +452,67 @@ header {
     filter: brightness(75%);
 }
 
-.trainer-info{
+.trainer-info {
     position: absolute;
     bottom: 10%;
     left: 10%;
 }
 
-.trainer-name{
+.trainer-name {
     font-size: 1rem;
 }
 
-.trainer-profession{
+.trainer-profession {
     color: rgba(255, 255, 255, 0.7);
     font-size: .9rem;
 }
+
+/* personalized-solution styles */
+.personalized-solution-text .heading {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.personalized-solution-table .description {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.personalized-solution-table .table-heading {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.personalized-solution-text h5 {
+    font-size: 1.7rem;
+    font-style: italic;
+
+}
+
+.personalized-solution-table .row {
+    display: grid;
+    grid-template-columns: 15% 25% 35% 10%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.personalized-solution-table .row:nth-child(1) {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-icon i {
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    padding: 16px;
+    color: rgb(230, 83, 60);
+    /* margin-left: 200px; */
+}
+

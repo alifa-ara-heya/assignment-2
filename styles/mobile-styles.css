@@ -8,7 +8,10 @@
         line-height: 120%;
     }
 
-    .change-habits-text, .bmi-calculator-text, .calculator-form-text, .meet-team-text {
+    .change-habits-text,
+    .bmi-calculator-text,
+    .calculator-form-text,
+    .meet-team-text {
         width: 90%;
         margin: 0 auto;
     }
@@ -42,10 +45,6 @@
 
     .miama {
         font-size: 4rem;
-    }
-
-    .banner-description {
-        /* width: 80%; */
     }
 
     .orange-banner-button {
@@ -90,8 +89,6 @@
 
     /* change your habit section */
 
-    
-
     .change-habits-image {
         flex-direction: column;
         gap: 2.5rem;
@@ -117,12 +114,11 @@
 
     /* bmi */
 
-    
-    .calculator-background{
+    .calculator-background {
         padding: 20px;
     }
 
-    .calculator-container{
+    .calculator-container {
         flex-direction: column;
         gap: 2.5rem;
     }
@@ -131,32 +127,52 @@
         width: 90%;
     }
 
-    .calculator-form-text{
+    .calculator-form-text {
         width: 200%;
     }
-   
-    .bmi-calculator-text{
+
+    .bmi-calculator-text {
         margin-bottom: 2rem;
     }
-    
+
     .calculator-form {
         display: grid;
         grid-template-columns: repeat(2, 100%);
         gap: 12px;
     }
-    
+
     .full-width {
         grid-column: span 2;
     }
 
-    .meet-team-image-container{
+    .meet-team-image-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         width: 90%;
         margin: 0 auto;
     }
 
-    .meet-team-text{
+    .meet-team-text {
         margin-bottom: 2rem;
+    }
+    /* personalized solution */
+    .personalized-solution-table .row {
+        /* display: grid;
+        grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    .table-icon{
+        margin-left: 0px;
+    }
+    .row br{
+        display: none;
+    }
+    .personalized-solution-text{
+        margin: 1rem;
     }
 }
