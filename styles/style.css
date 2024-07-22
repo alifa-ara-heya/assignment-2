@@ -41,9 +41,9 @@ body {
 .banner,
 .change-habits,
 .extra-mile,
-.meat-team-image-container,
+.meet-team-image-container,
 .calculator-container,
-.personalized-solution {
+.personalized-solution, .footer-container{
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 5.8rem;
@@ -497,7 +497,7 @@ header {
 
 .personalized-solution-table .row {
     display: grid;
-    grid-template-columns: 15% 25% 35% 10%;
+    grid-template-columns: 5% 15% 45% 10%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     justify-content: space-around;
     align-items: center;
@@ -516,3 +516,64 @@ header {
     /* margin-left: 200px; */
 }
 
+.table-icon i:hover{
+    cursor: pointer;
+    color: rgba(239, 237, 232, 0.65);
+    transform: rotate(-30deg);
+}
+
+/* footer styles */
+.fitness-logo-2 {
+    color: var(--orange);
+    /* font-size: 36px; */
+    font-size: 4.38rem;
+    font-weight: 800;
+    line-height: 120%;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.footer-column-1{
+    width: 43%;
+    margin-bottom: 2rem;
+}
+.footer-texts .description{
+    text-align: left;
+}
+
+.footer-heading{
+    color: rgb(255, 255, 255);
+font-size: 2rem;
+font-weight: 700;
+margin-bottom: 2.2rem;
+}
+
+.footer-lists{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 1.2rem;
+line-height: 120%;
+margin-bottom: 1rem;
+}
+
+.footer-texts{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.footer{
+    background: rgba(255, 255, 255, 0.1);
+    /* margin-bottom: 0px; */
+    padding: 2rem;
+    padding-top: 4rem;
+
+}
+
+.footer-copyright hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright .description{
+    margin-top: 2.2rem;
+}
