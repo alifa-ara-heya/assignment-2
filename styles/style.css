@@ -43,7 +43,9 @@ body {
 .extra-mile,
 .meet-team-image-container,
 .calculator-container,
-.personalized-solution, .footer-container{
+.personalized-solution,
+.footer-container,
+.trainings {
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 5.8rem;
@@ -327,6 +329,146 @@ header {
     border-radius: 1.1rem;
 }
 
+/* trainings and exercises styles */
+.trainings-text {
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.trainings-text .description,
+.trainings-text .heading {
+    text-align: left;
+}
+
+.row-1 {
+    display: grid;
+    grid-template-columns: 25% 43% 32%;
+
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 36% 29% 35%;
+
+}
+
+.image img {
+    width: 100%;
+    /* height: 200px; */
+    height: 100%;
+}
+
+.image {
+    position: relative;
+}
+
+.image p {
+    position: absolute;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1rem;
+    width: 50%;
+}
+
+.image-1 p,
+.image-3 p,
+.image-5 p,
+.image-6 p {
+    bottom: 18%;
+    left: 15%;
+}
+
+.image-2 p {
+    top: 18%;
+    left: 15%;
+}
+
+.image-4 p {
+    top: 18%;
+    right: -6%;
+}
+
+/* .image-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 255, 210, 0.5);
+} */
+
+.image-1{
+    background-image: url("../images/exercise1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(6, 255, 210, 0.5);
+    background-blend-mode: overlay;
+}
+/* the above code will work if i don't use image tag in my image-1 div */
+/* .image-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.3);
+} */
+/* the above code will work if I use image tag in my image-2 div. */
+.image-2{
+    background-image: url("../images/exercise2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 0, 0, 0.3);
+    background-blend-mode: overlay;
+}
+
+.image-3{
+    background-image: url("../images/exercise3.png");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+/* .image-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+} */
+
+.image-4{
+    background-image: url("../images/exercise4.png");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+
+.image-5{
+    background-image: url("../images/exercise5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(66, 255, 0, 0.3);
+    background-blend-mode: overlay;
+}
+
+.image-6{
+    background-image: url("../images/exercise6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 71, 255, 0.3);
+    background-blend-mode: overlay;
+}
+
+
 /* bmi calculator styles */
 .calculator-background {
     background: rgb(34, 34, 34);
@@ -421,9 +563,10 @@ header {
 
 
 /* meat team styles */
-.meet-team{
+.meet-team {
     margin-bottom: 3rem;
 }
+
 .meet-team-image-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -516,7 +659,7 @@ header {
     /* margin-left: 200px; */
 }
 
-.table-icon i:hover{
+.table-icon i:hover {
     cursor: pointer;
     color: rgba(239, 237, 232, 0.65);
     transform: rotate(-30deg);
@@ -533,36 +676,37 @@ header {
     margin-bottom: 2rem;
 }
 
-.footer-column-1{
+.footer-column-1 {
     width: 43%;
     margin-bottom: 2rem;
 }
-.footer-texts .description{
+
+.footer-texts .description {
     text-align: left;
 }
 
-.footer-heading{
+.footer-heading {
     color: rgb(255, 255, 255);
-font-size: 2rem;
-font-weight: 700;
-margin-bottom: 2.2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.2rem;
 }
 
-.footer-lists{
+.footer-lists {
     color: rgba(255, 255, 255, 0.5);
-font-size: 1.2rem;
-line-height: 120%;
-margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
 }
 
-.footer-texts{
+.footer-texts {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     margin-bottom: 5rem;
 }
 
-.footer{
+.footer {
     background: rgba(255, 255, 255, 0.1);
     /* margin-bottom: 0px; */
     padding: 2rem;
@@ -570,10 +714,10 @@ margin-bottom: 1rem;
 
 }
 
-.footer-copyright hr{
+.footer-copyright hr {
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-copyright .description{
+.footer-copyright .description {
     margin-top: 2.2rem;
 }

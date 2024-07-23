@@ -1,4 +1,4 @@
-/* responsive for mobile */
+/* responsiveness for mobile */
 @media screen and (max-width: 576px) {
 
     /* common */
@@ -111,6 +111,37 @@
     .extra-mile-image {
         width: 90%;
     }
+
+    /* exercises styles */
+    .trainings-image-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .row-1, .row-2 {
+        display: contents; /* Make row containers disappear but keep their children */
+    }
+
+    .image {
+        width: 100%;
+        padding-top: 100%; 
+        /* Maintain aspect ratio */
+    }
+    .image p {
+        width: 70%; 
+    }
+
+    .image-4 p {
+        right: 20%;
+        top: 50%;
+    }
+
+    .trainings-text {
+        width: 90%;
+    }
+
+
 
     /* bmi */
 
