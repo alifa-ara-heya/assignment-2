@@ -129,10 +129,12 @@
         /* Maintain aspect ratio */
     }
     .image p {
-        width: 70%; 
+        width: 70%;
+        font-size: .5rem;
+        line-height: .7rem;
     }
 
-    .image-4 p {
+    .image-4 p, .image-3 p {
         right: 20%;
         top: 50%;
     }
@@ -141,6 +143,9 @@
         width: 90%;
     }
 
+    .image-1 img, .image-6 img{
+        display: none;
+    }
 
 
     /* bmi */

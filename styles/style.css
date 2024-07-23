@@ -388,7 +388,7 @@ header {
     right: -6%;
 }
 
-/* .image-1::before {
+.image-1::before {
     content: '';
     position: absolute;
     top: 0;
@@ -396,7 +396,7 @@ header {
     width: 100%;
     height: 100%;
     background: rgba(6, 255, 210, 0.5);
-} */
+}
 
 .image-1{
     background-image: url("../images/exercise1.jpg");
@@ -433,16 +433,6 @@ header {
     background-blend-mode: overlay;
 }
 
-/* .image-4::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-} */
-
 .image-4{
     background-image: url("../images/exercise4.png");
     background-position: center;
@@ -460,6 +450,18 @@ header {
     background-blend-mode: overlay;
 }
 
+/* for desktop */
+.image-6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 71, 255, 0.3);
+}
+
+/* for mobile */
 .image-6{
     background-image: url("../images/exercise6.jpg");
     background-position: center;
