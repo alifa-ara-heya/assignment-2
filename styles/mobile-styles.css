@@ -90,9 +90,10 @@
 
     /* change your habit section */
 
-    .change-habits-text{
+    .change-habits-text {
         margin-bottom: 2.5rem;
     }
+
     .change-habits-image {
         flex-direction: column;
         gap: 2.5rem;
