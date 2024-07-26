@@ -1,3 +1,91 @@
-@media screen and (min-width: 576px) and (max-width: 992px){
-    
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        width: 90%;
+    }
+
+    .banner-card-1 {
+        left: 20%;
+    }
+
+    .banner-card-2 {
+        bottom: 70%;
+    }
+
+    .change-habits-text {
+        width: 80%;
+    }
+
+    .change-habits-image {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .change-habits-image-text {
+        width: 70%;
+    }
+
+    .extra-mile-text,
+    .trainings-text {
+        width: 90%;
+    }
+
+    .extra-mile-text .heading {
+        font-size: 2.4rem;
+    }
+
+    .extra-mile {
+        gap: 0;
+    }
+
+    .extra-mile-image {
+        width: 50%;
+        height: 300px;
+        padding-right: 2rem;
+    }
+
+    .extra-mile-image img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .trainings-image-container p {
+        font-size: .5rem;
+    }
+
+    .calculator-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .calculator-chart,
+    .calculator-form-container,
+    .footer-column-1 {
+        width: 100%;
+    }
+
+    .meet-team-image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-texts {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
+    }
+
+    .footer-column-2 {
+        grid-column: 1;
+    }
+
+    .footer-column-3 {
+        grid-column: 2/ span 1;
+        margin-right: 100px;
+    }
+
 }

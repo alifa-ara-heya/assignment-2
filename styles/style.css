@@ -148,7 +148,8 @@ header {
     font-weight: normal;
     position: absolute;
     /* bottom: 80px; */
-    bottom: 30%;
+    /* bottom: 30%; */
+    bottom: 29%;
 }
 
 .banner-description {
@@ -190,6 +191,14 @@ header {
     height: 40px;
     background-color: var(--orange);
     border-radius: 50%;
+    position: relative;
+}
+
+.play-btn i {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 .three-fifty {
@@ -226,11 +235,11 @@ header {
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    padding: 20px 23px;
+    padding: 23px 23px;
     width: 206px;
     position: absolute;
-    bottom: 63px;
-    right: 256px;
+    bottom: 12%;
+    left: -20%;
 }
 
 .banner-card-2 {
@@ -241,8 +250,8 @@ header {
     padding: 20px 23px;
     width: 206px;
     position: absolute;
-    bottom: 357px;
-    right: -50px;
+    bottom: 60%;
+    left: 60%;
 
 }
 
@@ -516,7 +525,6 @@ header {
 .calculator-form-text h4 {
     font-size: 1.75rem;
     font-weight: 900;
-    line-height: 120%;
     margin-bottom: 3.25rem;
 }
 

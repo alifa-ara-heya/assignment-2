@@ -62,25 +62,26 @@
         border-radius: 42px;
         padding: 1rem 2.5rem;
         font-size: 18px;
+        border: none;
     }
 
     .white-banner-button {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 600;
         border-radius: 42px;
         padding: 1rem 2.5rem;
     }
 
     .banner-card-1 {
-        left: 2rem;
-        bottom: 16rem;
+        left: 20%;
+        bottom: 40%;
     }
 
     .banner-card-2 {
-        right: -30px;
-        bottom: 28rem;
         padding: 1rem;
         width: 190px;
+        bottom: 70%;
+        left: 55%;
     }
 
     .banner-card-2 .five-hundred {
@@ -119,22 +120,26 @@
         gap: 10px;
     }
 
-    .row-1, .row-2 {
-        display: contents; /* Make row containers disappear but keep their children */
+    .row-1,
+    .row-2 {
+        display: contents;
+        /* Make row containers disappear but keep their children */
     }
 
     .image {
         width: 100%;
-        padding-top: 100%; 
-        /* Maintain aspect ratio */
+        padding-top: 100%;
+        /* Maintains aspect ratio */
     }
+
     .image p {
         width: 70%;
         font-size: .5rem;
         line-height: .7rem;
     }
 
-    .image-4 p, .image-3 p {
+    .image-4 p,
+    .image-3 p {
         right: 20%;
         top: 50%;
     }
@@ -143,7 +148,8 @@
         width: 90%;
     }
 
-    .image-1 img, .image-6 img{
+    .image-1 img,
+    .image-6 img {
         display: none;
     }
 
@@ -191,6 +197,7 @@
     .meet-team-text {
         margin-bottom: 2rem;
     }
+
     /* personalized solution */
     .personalized-solution-table .row {
         /* display: grid;
@@ -202,24 +209,29 @@
         text-align: center;
         gap: 1rem;
     }
-    .table-icon{
+
+    .table-icon {
         margin-left: 0px;
     }
-    .row br{
+
+    .row br {
         display: none;
     }
-    .personalized-solution-text{
+
+    .personalized-solution-text {
         margin: 2rem;
     }
+
     .personalized-solution-text h5 {
         font-size: 1.5rem;
     }
 
-    .footer-texts{
+    .footer-texts {
         flex-direction: column;
         gap: 1rem;
     }
-    .footer-column-1{
+
+    .footer-column-1 {
         width: 90%;
     }
 }
