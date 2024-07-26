@@ -398,13 +398,14 @@ header {
     background: rgba(6, 255, 210, 0.5);
 }
 
-.image-1{
+.image-1 {
     background-image: url("../images/exercise1.jpg");
     background-position: center;
     background-size: cover;
     background-color: rgba(6, 255, 210, 0.5);
     background-blend-mode: overlay;
 }
+
 /* the above code will work if i don't use image tag in my image-1 div */
 /* .image-2::before {
     content: '';
@@ -416,7 +417,7 @@ header {
     background: rgba(255, 0, 0, 0.3);
 } */
 /* the above code will work if I use image tag in my image-2 div. */
-.image-2{
+.image-2 {
     background-image: url("../images/exercise2.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -425,7 +426,7 @@ header {
     background-blend-mode: overlay;
 }
 
-.image-3{
+.image-3 {
     background-image: url("../images/exercise3.png");
     background-position: center;
     background-size: cover;
@@ -433,7 +434,7 @@ header {
     background-blend-mode: overlay;
 }
 
-.image-4{
+.image-4 {
     background-image: url("../images/exercise4.png");
     background-position: center;
     background-size: cover;
@@ -442,7 +443,7 @@ header {
 }
 
 
-.image-5{
+.image-5 {
     background-image: url("../images/exercise5.jpg");
     background-position: center;
     background-size: cover;
@@ -462,7 +463,7 @@ header {
 }
 
 /* for mobile */
-.image-6{
+.image-6 {
     background-image: url("../images/exercise6.jpg");
     background-position: center;
     background-size: cover;
