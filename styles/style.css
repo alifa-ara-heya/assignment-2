@@ -133,12 +133,8 @@ header {
 }
 
 .banner-heading {
-    /* font-size: 78px; */
     font-size: 4.7rem;
     font-weight: 900;
-    line-height: 120%;
-    /* white-space: pre-wrap; */
-    position: relative;
     margin-bottom: 1.75rem;
 }
 
@@ -146,7 +142,7 @@ header {
     font-family: 'Miama', sans-serif;
     font-size: 8rem;
     font-weight: normal;
-    position: absolute;
+    line-height: .3;
 }
 
 .banner-description {

@@ -36,7 +36,8 @@
     }
 
     .banner-content {
-        max-width: 352px;
+        /* max-width: 352px; */
+        max-width: 95%;
     }
 
     .banner-heading {
@@ -53,23 +54,25 @@
 
     .banner-button {
         display: flex;
-        gap: 14px;
+        gap: 20px;
     }
 
     .mobile-banner-button {
         display: block;
         background-color: var(--orange);
         border-radius: 42px;
-        padding: 1rem 2.5rem;
-        font-size: 18px;
+        padding: 1rem;
+        width: 50%;
+        font-size: 16px;
         border: none;
     }
 
     .white-banner-button {
         font-size: 14px;
-        font-weight: 600;
+        /* font-weight: 600; */
         border-radius: 42px;
-        padding: 1rem 2.5rem;
+        padding: 1rem;
+        width: 50%;
     }
 
     .banner-card-1 {
@@ -237,5 +240,17 @@
 
     .footer-column-1 {
         width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .bmi-table td{
+        font-size: 12px;
+    }
+   
+    .banner-card-2 {
+        width: 50%;
+        margin-right: 10px;
     }
 }
