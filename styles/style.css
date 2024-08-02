@@ -73,8 +73,6 @@ body {
 
 header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-    /* max-width: 1440px; */
-    /* margin-bottom: 6.25rem; */
 }
 
 .nav-bar {
@@ -544,6 +542,10 @@ header {
     font-size: 1rem;
     font-weight: 400;
     line-height: 22px;
+}
+
+.calculator-form select {
+    border-right: 16px solid transparent;
 }
 
 .calculator-form {
