@@ -97,6 +97,10 @@
         margin-bottom: 2.5rem;
     }
 
+    .change-habits-image-text p{
+        width: 100%;
+    }
+    
     .change-habits-image {
         flex-direction: column;
         gap: 2.5rem;
@@ -110,6 +114,10 @@
     .extra-mile-text {
         width: 80%;
         padding: 2rem 1.2rem;
+    }
+
+    .extra-mile-text .description{
+        width: 90%;
     }
 
     .btn-primary {
@@ -241,6 +249,10 @@
     .footer-column-1 {
         width: 90%;
     }
+
+    .footer-texts .description{
+        width: 90%;
+    }
 }
 
 
@@ -252,5 +264,9 @@
     .banner-card-2 {
         width: 50%;
         margin-right: 10px;
+    }
+
+    .fitness-logo-2{
+        font-size: 3.5rem;
     }
 }
