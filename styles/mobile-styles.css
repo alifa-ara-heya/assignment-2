@@ -97,10 +97,10 @@
         margin-bottom: 2.5rem;
     }
 
-    .change-habits-image-text p{
+    .change-habits-image-text p {
         width: 100%;
     }
-    
+
     .change-habits-image {
         flex-direction: column;
         gap: 2.5rem;
@@ -116,7 +116,7 @@
         padding: 2rem 1.2rem;
     }
 
-    .extra-mile-text .description{
+    .extra-mile-text .description {
         width: 90%;
     }
 
@@ -128,6 +128,9 @@
         width: 90%;
     }
 
+    .extra-mile-image img{
+        object-fit: cover;
+    }
     /* exercises styles */
     .trainings-image-container {
         display: grid;
@@ -167,6 +170,11 @@
     .image-6 img {
         display: none;
     }
+
+    .trainings .image-5, .trainings .image-6{
+        display: none;
+    }
+
 
 
     /* bmi */
@@ -209,6 +217,12 @@
         margin: 0 auto;
     }
 
+    .meet-team .trainer:nth-child(5),
+    .meet-team .trainer:nth-child(6) {
+        display: none;
+    }
+
+
     .meet-team-text {
         margin-bottom: 2rem;
     }
@@ -250,23 +264,23 @@
         width: 90%;
     }
 
-    .footer-texts .description{
+    .footer-texts .description {
         width: 90%;
     }
 }
 
 
 @media screen and (max-width: 375px) {
-    .bmi-table td{
+    .bmi-table td {
         font-size: 12px;
     }
-   
+
     .banner-card-2 {
         width: 50%;
         margin-right: 10px;
     }
 
-    .fitness-logo-2{
+    .fitness-logo-2 {
         font-size: 3.5rem;
     }
 }
